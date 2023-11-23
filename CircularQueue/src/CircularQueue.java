@@ -42,4 +42,21 @@ public class CircularQueue
             count--;
         }
     }
+
+    public void Display()
+    {
+        if(count==0)
+        {
+            System.out.println("Queue is Empty! Not able to Display");
+        }
+        else
+        {
+            for(int i=0;i<=count;i++)
+            {
+                System.out.println(cq[front]+" ");
+                front=(front+1)%size;
+            }
+            System.out.println();
+        }
+    }
 }

@@ -26,6 +26,7 @@ public class CircularQueueApp
                     cq.Deque();
                     break;
                 case 3:
+                    cq.Display();
                     break;
                 default:
                     System.exit(0);
