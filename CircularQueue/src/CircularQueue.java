@@ -29,4 +29,17 @@ public class CircularQueue
             count++;
         }
     }
+
+    public void Deque()
+    {
+        if(count==0){
+            System.out.println("Queue is Empty!");
+        }
+        else
+        {
+            System.out.println("Deleted element is "+cq[front]);
+            front=(front+1)%size;
+            count--;
+        }
+    }
 }
