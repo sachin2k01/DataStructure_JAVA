@@ -89,5 +89,27 @@ public class LinkedList
             temp.link=null;
         }
     }
+    public void display()
+    {
+        Node temp;
+        if(first==null)
+        {
+            System.out.println("Linked List is Empty!");
+        }
+        else if (first.link==null)
+        {
+            System.out.println(first.data);
+        }
+        else
+        {
+            temp=first;
+            while (temp!=null)
+            {
+                System.out.println(temp.data);
+                temp=temp.link;
+            }
+            System.out.println();
+        }
+    }
 
 }

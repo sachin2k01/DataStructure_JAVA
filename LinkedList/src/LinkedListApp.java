@@ -13,6 +13,8 @@ public class LinkedListApp
             System.out.println("Enter 2. For Insert at rear");
             System.out.println("Enter 3. For Delete at front");
             System.out.println("Enter 4. For Delete at rear");
+            System.out.println("Enter 5. For Display the Element");
+            System.out.println("Enter Any Other Key Exit");
             int choice=sc.nextInt();
             switch (choice)
             {
@@ -24,6 +26,8 @@ public class LinkedListApp
                     ll.deleteFront();
                 case 4 ->
                     ll.deleteRear();
+                case 5 ->
+                    ll.display();
                 default -> System.exit(0);
             }
         }
