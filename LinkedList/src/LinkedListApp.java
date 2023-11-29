@@ -15,6 +15,9 @@ public class LinkedListApp
             {
                 case 1 ->
                     ll.insertFront();
+                case 2 ->
+                    ll.inseatRear();
+                default -> System.exit(0);
             }
         }
 

@@ -28,4 +28,26 @@ public class LinkedList
         }
     }
 
+    public void inseatRear()
+    {
+        Node temp;
+        System.out.println("Enter an element");
+        int elem=sc.nextInt();
+        Node newnode=new Node();
+        newnode.data=elem;
+        newnode.link=null;
+        if(first==null)
+        {
+            first=newnode;
+        }
+        else {
+            temp=first;
+            while (temp.link!=null)
+            {
+                temp=temp.link;
+            }
+            temp.link=newnode;
+        }
+    }
+
 }
