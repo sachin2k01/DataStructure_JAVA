@@ -50,4 +50,23 @@ public class LinkedList
         }
     }
 
+    public void deleteFront()
+    {
+        Node temp;
+        if(first==null)
+        {
+            System.out.println("Linked List is empty! Deletion Not Possible");
+        }
+        if(first.link==null)
+        {
+            System.out.println("Deleted element is "+first.data);
+            first=null;
+        }
+        else
+        {
+            System.out.println("Deleted Element is "+first.data);
+            first=first.link;
+        }
+    }
+
 }
