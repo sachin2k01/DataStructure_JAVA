@@ -68,5 +68,26 @@ public class LinkedList
             first=first.link;
         }
     }
+    public void deleteRear()
+    {
+        Node temp;
+        if(first==null)
+        {
+            System.out.println("Linked lIst is Empty! Deletion is Not Possible");
+        }
+        if(first.link==null)
+        {
+            System.out.println("Deleted Element is "+first.data);
+        }
+        else {
+            temp=first;
+            while (temp.link.link!=null)
+            {
+                temp=temp.link;
+            }
+            System.out.println("Deleted Element is "+temp.link.data);
+            temp.link=null;
+        }
+    }
 
 }
